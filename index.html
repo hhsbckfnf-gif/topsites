@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Sites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .desktop {
+            display: block;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .mobile {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+        /* Mobile styles */
+        /* ========================= CTA SHINE ANIMATION ========================= */
+        @keyframes cta-shine {
+            0% { transform: translateX(-150%); }
+            60% { transform: translateX(200%); }
+            100% { transform: translateX(200%); }
+        }
+        .cta-btn {
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.75) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            animation: cta-shine 6s infinite;
+            pointer-events: none;
+        }
+        /* ========================= ANIMATED CASINO CARD BORDER ========================= */
+        @keyframes border-move {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+        .casino-card {
+            border-radius: 16px;
+            border: 2px solid transparent;
+            background: linear-gradient(#2A0E4F, #2A0E4F) padding-box,
+                        linear-gradient(
+                            90deg,
+                            #8E5EDC, #6C3BAA, #FFE066, #FF9F1C, #8E5EDC
+                        ) border-box;
+            background-size: 300% 300%;
+            animation: border-move 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <h1>Casino Hotels in Canada</h1>
+        
+        <h2>Fallsview Casino Resort</h2>
+        <p><strong>Location:</strong> Niagara Falls, Ontario</p>
+        <p><strong>Operator:</strong> Ontario Lottery and Gaming Corporation (OLG)</p>
+        <p>Fallsview Casino Resort is one of the largest and most recognizable casino hotels in Canada. Located near the Canadian Horseshoe Falls, the resort plays a central role in Niagara Falls’ tourism industry and attracts millions of visitors annually. The casino floor spans over 200,000 square feet and includes thousands of slot machines, electronic gaming terminals, and a wide range of table games such as blackjack, roulette, baccarat, and poker. High-limit gaming areas are also available. The resort features two luxury hotel towers offering several hundred rooms and suites with views of the falls or the surrounding city. Amenities include a full-service spa, fitness facilities, indoor pools, and extensive conference and event spaces. Fallsview Casino Resort also offers multiple dining options ranging from casual eateries to fine dining restaurants. Its large entertainment theatre hosts concerts, comedy shows, and live performances, making the resort a year-round destination beyond gambling.</p>
+        
+        <h2>Casino Rama Resort</h2>
+        <p><strong>Location:</strong> Orillia, Ontario</p>
+        <p><strong>Ownership:</strong> Rama First Nation (under provincial agreements)</p>
+        <p>Casino Rama Resort is a prominent Indigenous-owned casino hotel located north of Toronto. It operates as a destination resort, attracting visitors from across Ontario and neighboring provinces. The casino features thousands of slot machines, table games, and poker rooms. The gaming area is designed to accommodate both casual visitors and regular patrons, with a strong emphasis on customer service and responsible gambling. The on-site hotel offers more than 300 rooms and suites, along with spa services, pools, fitness facilities, and meeting spaces. The resort is particularly well known for its large entertainment venue, which hosts internationally recognized musicians, comedians, and cultural events. Casino Rama plays a significant economic role for the Rama First Nation, with revenues supporting community programs, infrastructure, education, and social services.</p>
+        
+        <h2>River Rock Casino Resort</h2>
+        <p><strong>Location:</strong> Richmond, British Columbia</p>
+        <p><strong>Operator:</strong> British Columbia Lottery Corporation (BCLC)</p>
+        <p>River Rock Casino Resort is the largest casino in British Columbia and is located near Vancouver International Airport, making it accessible to both domestic and international travelers. The casino includes a wide range of slot machines, electronic table games, and traditional table games. The gaming floor is designed for high visitor traffic and offers both standard and premium gaming areas. The resort features a luxury hotel with riverfront views, as well as amenities such as a full-service spa, swimming pool, marina access, fitness facilities, and conference rooms. These features allow the property to function as both a leisure resort and a business destination. Dining options range from casual restaurants to upscale dining experiences, and the resort regularly hosts live entertainment, corporate events, and private functions.</p>
+        
+        <h2>Grey Eagle Resort & Casino</h2>
+        <p><strong>Location:</strong> Calgary, Alberta</p>
+        <p><strong>Ownership:</strong> Tsuu T’ina Nation</p>
+        <p>Grey Eagle Resort & Casino is a major casino hotel in southern Alberta and one of the most successful Indigenous-owned gaming properties in Canada. It serves both local residents and tourists visiting the Calgary region. The casino offers a variety of gaming options, including slot machines, electronic gaming, table games, and poker rooms. The facility emphasizes modern gaming technology and a comfortable environment. The attached hotel includes well-appointed rooms and suites, along with an event centre that hosts concerts, sporting events, conferences, and trade shows. Multiple restaurants and bars are available on-site, catering to a wide range of tastes. Revenue from Grey Eagle Resort & Casino supports employment, economic development, and community initiatives for the Tsuu T’ina Nation.</p>
+        
+        <h2>Casino de Charlevoix (Fairmont Le Manoir Richelieu)</h2>
+        <p><strong>Location:</strong> La Malbaie, Quebec</p>
+        <p><strong>Operator:</strong> Loto-Québec (casino) in partnership with Fairmont Hotels</p>
+        <p>Casino de Charlevoix is a scenic casino hotel located along the St. Lawrence River in eastern Quebec. The casino is integrated with the historic Fairmont Le Manoir Richelieu, creating a luxury resort experience. The casino offers slot machines, electronic gaming, and table games, with a focus on atmosphere and tourism rather than high-volume gaming. The gaming area complements the broader resort experience rather than dominating it. The Fairmont hotel provides upscale accommodations, spa services, golf courses, and fine dining options. Guests often visit the property for relaxation, scenic views, and leisure activities in addition to casino gaming. This casino hotel model demonstrates how gambling can be integrated into a luxury tourism and wellness destination.</p>
+        
+        <h2>Starlight Casino & Hotel</h2>
+        <p><strong>Location:</strong> New Westminster, British Columbia</p>
+        <p><strong>Operator:</strong> Gateway Casinos & Entertainment</p>
+        <p>Starlight Casino & Hotel is a modern casino hotel serving the Greater Vancouver area. It caters primarily to regional visitors while also offering hotel accommodations for longer stays. The casino includes slot machines, electronic table games, and live table games in a compact but contemporary gaming environment. It emphasizes convenience and accessibility for local patrons. The hotel offers comfortable mid-range accommodations, while on-site dining options include casual restaurants and bars. The property also hosts live entertainment and community events. Starlight Casino & Hotel represents a smaller-scale casino hotel model focused on regional tourism rather than large destination travel.</p>
+    </div>
+    
+    <div class="mobile">
+        <style>
+            /* Additional styles if needed, but already in head */
+        </style>
+        <div class="wrapper" style=" width: 100%; background-color: #2A0E4F; color: white; font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; ">
+            <!-- HERO -->
+            <div style=" background: linear-gradient(rgba(108,59,170,0.15), rgba(108,59,170,0.15)), url('https://i.ibb.co/Mk37WrSg/sub-header.jpg') center / cover no-repeat; padding: 2.6rem 1.5rem 3rem; text-align: center; ">
+                <h1 style="font-size: 2rem; margin: 0;">UK’s Top Online Casinos</h1>
+                <p style="font-size: 0.85rem; margin: 0.4rem 0 0; opacity: 0.95;"> January 2026 </p>
+            </div>
+            <!-- OFFER 1 — BETNINJA -->
+            <div style="padding: 2rem 1.5rem 4rem; width: 88%; margin: 0 auto;">
+                <div style="margin: 0 0 1.25rem;">
+                    <div class="casino-card" style=" display: flex; overflow: hidden; width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); ">
+                        <!-- LEFT -->
+                        <div style=" flex: 0.95; background-color: #4A1F7A; padding: 0.75rem 0.5rem; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                            <div style=" position: absolute; top: 0.5rem; left: 0.5rem; background: linear-gradient(135deg, #f5c84c, #e6b83f); color: #2A0E4F; padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: bold; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); "> NO.1 IN THE UK🏆 </div>
+                            <a class="dynamic-out" href="https://trk.clicks-trk.com/aff_c?offer_id=697&aff_id=1086&url_id=5665&source=5665&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" >
+                                <img src="https://i.ibb.co/pjzWBtYH/betninja.png" alt="betninja" style="max-width:145px; margin:1.2rem 0 0.5rem;" />
+                            </a>
+                            <!-- RATING -->
+                            <div style="color:#ffcb0f; font-size:1.05rem; margin-top:0.4rem;"> ★★★★★ </div>
+                            <!-- REVIEWS -->
+                            <div style="margin-top:0.35rem;">
+                                <div style="font-size:0.85rem; font-weight:bold;"> 389,347 </div>
+                                <div style="font-size:0.75rem; color:#7CFFB2;"> Verified Reviews </div>
+                            </div>
+                            <div style="font-size:1.5rem; font-weight:bold; margin-top:0.35rem;"> 10.0 </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div style=" flex: 1.05; background-color: #6C3BAA; padding: 0.75rem; text-align: center; display: flex; flex-direction: column; justify-content: center; border-radius: 0 16px 16px 0; ">
+                            <p style=" font-weight:bold; font-size:1.3rem; margin:0.8rem 0 0.6rem; background: linear-gradient(135deg, #FFE066, #FF9F1C); -webkit-background-clip: text; background-clip: text; color: transparent; "> Welcome Bonus </p>
+                            <p style="margin:0; font-weight:bold;">200% up to £1,000</p>
+                            <p style="margin:0.2rem 0 0.6rem; font-weight:bold;"> + 100 Free Spins </p>
+                            <a class="dynamic-out cta-btn" href="https://trk.clicks-trk.com/aff_c?offer_id=697&aff_id=1086&url_id=5665&source=5665&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" style=" background:#00c500; color:#fff; font-weight:bold; font-size:1.1rem; padding:0.85rem 1.8rem; border-radius:30px; margin:0.6rem auto 0.4rem; text-decoration:none; display:inline-block; box-shadow: 0 0 18px rgba(0,255,120,0.8), 0 0 32px rgba(0,255,120,0.45); " > GET BONUS </a>
+                            <div style="font-size:0.7rem; opacity:0.9;"> 🔒 Safe & Secure • Instant Withdrawals </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFFER 2 — INSTASPINS -->
+                <div style="margin: 0 0 1.25rem;">
+                    <div class="casino-card" style=" display: flex; overflow: hidden; width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); ">
+                        <!-- LEFT -->
+                        <div style=" flex: 0.95; background-color: #4A1F7A; padding: 0.75rem 0.5rem; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                            <div style=" position: absolute; top: 0.5rem; left: 0.5rem; background: linear-gradient(135deg, #f5c84c, #e6b83f); color: #2A0E4F; padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: bold; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); "> SECOND BEST🔥 </div>
+                            <a class="dynamic-out" href="https://trk.clicks-trk.com/aff_c?offer_id=394&aff_id=1086&url_id=2674&source=2674&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" >
+                                <img src="https://i.ibb.co/hRGSGhqG/instaspins.png" alt="instaspins" style="max-width:145px; margin:1.2rem 0 0.5rem;" />
+                            </a>
+                            <div style="color:#ffcb0f; font-size:1.05rem; margin-top:0.4rem;"> ★★★★★ </div>
+                            <div style="margin-top:0.35rem;">
+                                <div style="font-size:0.85rem; font-weight:bold;">383,561</div>
+                                <div style="font-size:0.75rem; color:#7CFFB2;">Verified Reviews</div>
+                            </div>
+                            <div style="font-size:1.5rem; font-weight:bold; margin-top:0.35rem;"> 9.9 </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div style=" flex: 1.05; background-color: #6C3BAA; padding: 0.75rem; text-align: center; display: flex; flex-direction: column; justify-content: center; border-radius: 0 16px 16px 0; ">
+                            <p style=" font-weight:bold; font-size:1.3rem; margin:0.8rem 0 0.6rem; background: linear-gradient(135deg, #FFE066, #FF9F1C); -webkit-background-clip: text; background-clip: text; color: transparent; "> Welcome Bonus </p>
+                            <p style="margin:0; font-weight:bold;">100% up to $1,000</p>
+                            <p style="margin:0.2rem 0 0.6rem; font-weight:bold;"> + 100 Free Spins </p>
+                            <a class="dynamic-out cta-btn" href="https://trk.clicks-trk.com/aff_c?offer_id=394&aff_id=1086&url_id=2674&source=2674&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" style=" background:#00c500; color:#fff; font-weight:bold; font-size:1.1rem; padding:0.85rem 1.8rem; border-radius:30px; margin:0.6rem auto 0.4rem; text-decoration:none; display:inline-block; box-shadow: 0 0 18px rgba(0,255,120,0.8), 0 0 32px rgba(0,255,120,0.45); " > GET BONUS </a>
+                            <div style="font-size:0.7rem; opacity:0.9;"> 🔒 Safe & Secure • Instant Withdrawals </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFFER 3 — LIZARO -->
+                <div style="margin: 0 0 1.25rem;">
+                    <div class="casino-card" style=" display: flex; overflow: hidden; width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); ">
+                        <!-- LEFT -->
+                        <div style=" flex: 0.95; background-color: #4A1F7A; padding: 0.75rem 0.5rem; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                            <div style=" position: absolute; top: 0.5rem; left: 0.5rem; background: linear-gradient(135deg, #f5c84c, #e6b83f); color: #2A0E4F; padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: bold; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); "> LUCK DROP 🍀 </div>
+                            <a class="dynamic-out" href="https://trk.clicks-trk.com/aff_c?offer_id=596&aff_id=1086&url_id=5857&source=5857&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" >
+                                <img src="https://i.ibb.co/gZqkTZmk/lizaro.png" alt="lizaro" style="max-width:145px; margin:1.2rem 0 0.5rem;" />
+                            </a>
+                            <div style="color:#ffcb0f; font-size:1.05rem; margin-top:0.4rem;"> ★★★★★ </div>
+                            <div style="margin-top:0.35rem;">
+                                <div style="font-size:0.85rem; font-weight:bold;">383,005</div>
+                                <div style="font-size:0.75rem; color:#7CFFB2;">Verified Reviews</div>
+                            </div>
+                            <div style="font-size:1.5rem; font-weight:bold; margin-top:0.35rem;"> 9.8 </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div style=" flex: 1.05; background-color: #6C3BAA; padding: 0.75rem; text-align: center; display: flex; flex-direction: column; justify-content: center; border-radius: 0 16px 16px 0; ">
+                            <p style=" font-weight:bold; font-size:1.3rem; margin:0.8rem 0 0.6rem; background: linear-gradient(135deg, #FFE066, #FF9F1C); -webkit-background-clip: text; background-clip: text; color: transparent; "> Welcome Bonus </p>
+                            <p style="margin:0; font-weight:bold;">250% up to £2,550</p>
+                            <p style="margin:0.2rem 0 0.6rem; font-weight:bold;"> + 250 Free Spins + 1 Bonus Crab </p>
+                            <a class="dynamic-out cta-btn" href="https://trk.clicks-trk.com/aff_c?offer_id=596&aff_id=1086&url_id=5857&source=5857&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" style=" background:#00c500; color:#fff; font-weight:bold; font-size:1.1rem; padding:0.85rem 1.8rem; border-radius:30px; margin:0.6rem auto 0.4rem; text-decoration:none; display:inline-block; box-shadow: 0 0 18px rgba(0,255,120,0.8), 0 0 32px rgba(0,255,120,0.45); " > GET BONUS </a>
+                            <div style="font-size:0.7rem; opacity:0.9;"> 🔒 Safe & Secure • Instant Withdrawals </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFFER 4 — Spindog -->
+                <div style="margin: 0 0 1.25rem;">
+                    <div class="casino-card" style=" display: flex; overflow: hidden; width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); ">
+                        <!-- LEFT -->
+                        <div style=" flex: 0.95; background-color: #4A1F7A; padding: 0.75rem 0.5rem; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                            <div style=" position: absolute; top: 0.5rem; left: 0.5rem; background: linear-gradient(135deg, #f5c84c, #e6b83f); color: #2A0E4F; padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: bold; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); "> HOT OFFER🔥 </div>
+                            <a class="dynamic-out" href="https://trk.clicks-trk.com/aff_c?offer_id=674&aff_id=1086&url_id=5835&source=5835&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" >
+                                <img src="https://i.ibb.co/mCgCqdwt/spindog1.png" alt="my777" style="max-width:145px; margin:1.2rem 0 0.5rem;" />
+                            </a>
+                            <div style="color:#ffcb0f; font-size:1.05rem; margin-top:0.4rem;"> ★★★★★ </div>
+                            <div style="margin-top:0.35rem;">
+                                <div style="font-size:0.85rem; font-weight:bold;">382,103</div>
+                                <div style="font-size:0.75rem; color:#7CFFB2;">Verified Reviews</div>
+                            </div>
+                            <div style="font-size:1.5rem; font-weight:bold; margin-top:0.35rem;"> 9.7 </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div style=" flex: 1.05; background-color: #6C3BAA; padding: 0.75rem; text-align: center; display: flex; flex-direction: column; justify-content: center; border-radius: 0 16px 16px 0; ">
+                            <p style=" font-weight:bold; font-size:1.3rem; margin:0.8rem 0 0.6rem; background: linear-gradient(135deg, #FFE066, #FF9F1C); -webkit-background-clip: text; background-clip: text; color: transparent; "> Welcome Bonus </p>
+                            <p style="margin:0; font-weight:bold;">150% up to $900</p>
+                            <p style="margin:0.2rem 0 0.6rem; font-weight:bold;"> + 150 Free Spins </p>
+                            <a class="dynamic-out cta-btn" href="https://trk.clicks-trk.com/aff_c?offer_id=674&aff_id=1086&url_id=5835&source=5835&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" style=" background:#00c500; color:#fff; font-weight:bold; font-size:1.1rem; padding:0.85rem 1.8rem; border-radius:30px; margin:0.6rem auto 0.4rem; text-decoration:none; display:inline-block; box-shadow: 0 0 18px rgba(0,255,120,0.8), 0 0 32px rgba(0,255,120,0.45); " > GET BONUS </a>
+                            <div style="font-size:0.7rem; opacity:0.9;"> 🔒 Safe & Secure • Instant Withdrawals </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFFER 5 — my777bet -->
+                <div style="margin: 0 0 1.25rem;">
+                    <div class="casino-card" style=" display: flex; overflow: hidden; width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); ">
+                        <!-- LEFT -->
+                        <div style=" flex: 0.95; background-color: #4A1F7A; padding: 0.75rem 0.5rem; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                            <div style=" position: absolute; top: 0.5rem; left: 0.5rem; background: linear-gradient(135deg, #f5c84c, #e6b83f); color: #2A0E4F; padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: bold; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); "> HOT OFFER🔥 </div>
+                            <a class="dynamic-out" href="https://trk.clicks-trk.com/aff_c?offer_id=731&aff_id=1086&url_id=5901&source=5901&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" >
+                                <img src="https://i.ibb.co/ynRVxczT/my777bet.png" alt="my777" style="max-width:145px; margin:1.2rem 0 0.5rem;" />
+                            </a>
+                            <div style="color:#ffcb0f; font-size:1.05rem; margin-top:0.4rem;"> ★★★★★ </div>
+                            <div style="margin-top:0.35rem;">
+                                <div style="font-size:0.85rem; font-weight:bold;">379,382</div>
+                                <div style="font-size:0.75rem; color:#7CFFB2;">Verified Reviews</div>
+                            </div>
+                            <div style="font-size:1.5rem; font-weight:bold; margin-top:0.35rem;"> 9.6 </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div style=" flex: 1.05; background-color: #6C3BAA; padding: 0.75rem; text-align: center; display: flex; flex-direction: column; justify-content: center; border-radius: 0 16px 16px 0; ">
+                            <p style=" font-weight:bold; font-size:1.3rem; margin:0.8rem 0 0.6rem; background: linear-gradient(135deg, #FFE066, #FF9F1C); -webkit-background-clip: text; background-clip: text; color: transparent; "> Welcome Bonus </p>
+                            <p style="margin:0; font-weight:bold;">100% up to $1,000</p>
+                            <p style="margin:0.2rem 0 0.6rem; font-weight:bold;"> + 100 Free Spins </p>
+                            <a class="dynamic-out cta-btn" href="https://trk.clicks-trk.com/aff_c?offer_id=731&aff_id=1086&url_id=5901&source=5901&aff_sub={{urlparams.campaignid}}&aff_sub2={{urlparams.adgroupid}}&aff_sub3={{urlparams.keyword}}&aff_sub4={{urlparams.matchtype}}&aff_sub5={{urlparams.gclid}}" target="_blank" rel="noopener noreferrer" style=" background:#00c500; color:#fff; font-weight:bold; font-size:1.1rem; padding:0.85rem 1.8rem; border-radius:30px; margin:0.6rem auto 0.4rem; text-decoration:none; display:inline-block; box-shadow: 0 0 18px rgba(0,255,120,0.8), 0 0 32px rgba(0,255,120,0.45); " > GET BONUS </a>
+                            <div style="font-size:0.7rem; opacity:0.9;"> 🔒 Safe & Secure • Instant Withdrawals </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TEXT SECTION -->
+                <h2 style="margin-top: 3rem;">HOW WE ANALYZE CASINOS</h2>
+                <p> Our team of casino experts carefully reviews each site before it appears in our rankings. We test registration, deposits, gameplay, withdrawals, and customer support exactly like a real player from the UK would. </p>
+                <p> We pay special attention to payout speeds, verification processes, bonus terms, game providers, and mobile performance. </p>
+                <p> Only brands that consistently treat players fairly and pay out winnings are featured here. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
